@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen and (min-height:500px)">
+</head>
+<body>
+    <section class="container" onsubmit="return confirmPasscode()">
+        <form action="#" id="myForm" name="register">
+            <h2>SIGN UP FORM</h2>
+            <div class="username">
+                <label for="name">USERNAME</label><br>
+                <input type="text" name="username" placeholder="username here" required id="username">
+            </div>
+            <br>
+            <div class="email">
+                <label for="email">EMAIL</label><br>
+                <input type="email" name="email" placeholder="email here" required pattern="@{a-z}" id="email">
+            </div>
+            <br>
+            <div class="pass1">
+                <label for="passcode">PASSWORD</label><br>
+                <input type="password" name="password" required id="passcode1"><br><br>
+            </div>
+            <div class="pass2">
+                <label for="passcode">Confirm Password*</label><br>
+                <input type="password" name="password" id="passcode2" required>
+            </div>
+            <br>
+            <div class="btn">
+                <label for="button"></label>
+                <button type="submit" id="sub-btn">ENROLL</button>
+            </div>
+            <span id="error"></span>
+        </form>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
